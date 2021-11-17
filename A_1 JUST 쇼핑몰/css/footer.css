@@ -1,0 +1,19 @@
+
+#footer>#logo>img{
+    position: relative;
+    top:28px;
+}
+#copyright>address{
+    position: relative;
+    top:30px;
+    text-align: center;
+}
+#sns>ul{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+#sns>ul>li{
+    float: left;
+    margin-right: 8px;
+}

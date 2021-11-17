@@ -1,0 +1,27 @@
+#popup {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9;
+    left: 350px;
+    top: 100px;
+    border-radius: 1px solid #777;
+    /* 팝업창그림자 */
+    box-shadow: rgba(0,0,0,0.5) 0 0 0 999px;
+    display: none;
+}
+
+#popup>#head {
+    width: 500px;
+    height: 40px;
+    background-color: rgb(252, 255, 60);
+}
+
+#popup>#btn-area {
+    width: 500px;
+    height: 40px;
+    background-color: rgb(180, 115, 255);
+    position: absolute;
+    bottom: 13px;
+}
