@@ -1,0 +1,35 @@
+#header>#logo{
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+
+#navi{
+    padding-top: 20px; padding-right: 30px; box-sizing: border-box;
+}
+#navi>#gnb{
+    float: right;
+}
+#gnb>li{
+    float: left;
+}
+#gnb>li>a{
+    display: block; width: 100px; height: 40px; font-size: 18px;
+    background-color: #ffffff; text-align: center;
+    padding-top: 5px; box-sizing: border-box; color:#333333
+}
+#gnb li a:hover{
+    color: #ffffff;
+    background-color: #1d8844;
+}
+#gnb>li:hover #lnb{
+    opacity: 1;
+    visibility: visible;
+}
+#lnb>li>a{
+    display: block; width: 100px; height: 40px;
+    background-color: #ffffff; text-align: center;
+    padding-top: 5px; box-sizing: border-box; color: #333333;
+}
+#lnb{
+    opacity: 0; position: absolute; visibility: hidden;
+}

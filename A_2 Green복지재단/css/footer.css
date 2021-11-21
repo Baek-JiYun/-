@@ -1,0 +1,12 @@
+
+#footer>#logo>#img{
+    position: relative;
+    top: 25px;
+}
+#copyright>address{
+    position: relative; top: 30px;
+    text-align: center;
+}
+#family{
+    
+}

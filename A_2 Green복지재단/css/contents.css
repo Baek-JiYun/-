@@ -1,0 +1,28 @@
+
+#notice{
+    padding-top: 15px; width: 360px; height: 140px;
+}
+#notice>li>a>span:first-child{
+    width: 240px; height: 28px;
+    font-size: 16px; float: left;
+}
+#notice>li>a>span:nth-child(2){
+    width: 90px; height: 25px; float: left;
+}
+#con2{
+    width: 465px; height: 145px;
+}
+#con2>ul{
+    position: relative;
+    left: 30px; top:30px;
+}
+#con2>ul>li{
+    float: left; margin-right: 15px;
+}
+#con2>ul>li>a>img{
+    width: 130px; height: 120px;
+}
+#con3>img{
+    width: 340px; height: 180px; position: relative;
+    left: 10px; top: 10px;
+}
