@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var myInputValue=0;
+        var timer=null;
+        var started=null;
+
+        function tick(){
+            myInputValue=document.getElementById("timer").value
+            document.getElementById("timer").value=Number(myInputValue)+1
+        }
+        function start(){
+            if(started==null){
+                started=setInterval(tick,1000)
+                //setInterval이 실행되면 
+                //자기자신을 찾아올수있는 주소값을 리턴한다
+            }else{
+                console.log("이미 실행중!")
+            }
+        }
+        function stop(){
+            clearInterval(started)
+            //started(setInterval가 가리키는 주소)
+            //가 가리키는 곳의 프로세스를 중지시킨다.
+            started=null
+        }
+    </script>
+</head>
+<body>
+    <input type="text" value="1" id="timer">
+    <button onclick="start()">시작</button>
+    <button onclick="stop()">중지</button>
+</body>
+</html>
