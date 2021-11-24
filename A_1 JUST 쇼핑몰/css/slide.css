@@ -1,12 +1,16 @@
 #slide{
-    overflow: hidden;
-    /* 슬라이드의 영역을 벗어나면 숨긴다. */
+    overflow:hidden;
+    position: relative;
 }
-#slide-contents{
-    width: 1200px;
-    height: 900px;
+
+#slide>#slide_contents{
+    width:3600px;
+    height:300px;
+    position: absolute;
+    top:0;
+    left:0;
 }
-#slide-contents>img{
-    display: block;
-    /* block을 주지않으면 슬라이드 사이에 간격이 생긴다 */
+
+#slide>#slide_contents>img{
+    float:left;
 }
