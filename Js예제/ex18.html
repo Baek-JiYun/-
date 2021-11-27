@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=confirm("탈퇴 하시겠습니까?")
+        if(a==true){
+            var id=prompt("아이디 입력")
+            var pw=prompt("패스워드 입력")
+
+            if(id==pw){
+                document.write("탈퇴완료!")
+            } else{
+                document.write("아아디와 패스워드가 일치하지 않습니다.")
+            }
+        }else{
+            document.write("종료!")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

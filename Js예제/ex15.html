@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=prompt("성별 입력 남 or 여")
+        var b=prompt("키 입력")
+        var c=prompt("몸무게 입력")
+        var d,result=0;
+
+        if(a=="남"){
+            result=(b-100)*0.9
+            if(result>c){
+                d=result-c
+                document.write(d.toFixed(2)+"kg 만큼 더 증량하세요")
+            }else{
+                d=c-result
+                document.write(d.toFixed(2)+"kg 만큼 더 감량하세요")
+            }
+        }else if(a=="여"){
+            result=(b-100)*0.8
+            if(result>c){
+                d=result-c
+                document.write(d.toFixed(2)+"kg 만큼 더 증량하세요")
+            }else{
+                d=c-result
+                document.write(d.toFixed(2)+"kg 만큼 더 감량하세요")
+            }
+        }else{
+            document.write("남, 여로 입력해주세요")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
