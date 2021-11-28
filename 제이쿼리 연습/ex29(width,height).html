@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+    <style>
+        #my_div{
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            var w=$("#my_div").width();
+            var h=$("#my_div").height();
+            console.log('가로',w);
+            console.log('세로',h);
+            $('#my_div').width('150px');
+            $('#my_div').height('50px');
+        })
+    </script>
+</head>
+<body>
+    <div id="my_div">
+        Lorem, ipsum dolor.
+    </div>
+</body>
+</html>
